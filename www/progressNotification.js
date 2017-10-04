@@ -6,19 +6,19 @@ module.exports = (function() {
   var _notification = {};
 
   _notification.show = function(title, message, indeterminate, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, 'ProgressNotification', 'show', [title, message, indeterminate || false]);
+    exec(successCallback, errorCallback, 'AndroidProgressNotification', 'show', [title, message, indeterminate || false]);
   }
 
   _notification.update = function(value, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, 'ProgressNotification', 'update', [value]);
+    exec(successCallback, errorCallback, 'AndroidProgressNotification', 'update', [value]);
   }
 
   _notification.finish = function(message, value, successCallback, errorCallback) {
     value = typeof(value) == 'undefined' ? 100 : value;
-    exec(successCallback, errorCallback, 'ProgressNotification', 'finish', [message, value]);
+    exec(successCallback, errorCallback, 'AndroidProgressNotification', 'finish', [message, value]);
   }
   _notification.dismiss = function(value, successCallback, errorCallback) {
-    exec(successCallback, errorCallback, 'ProgressNotification', 'dismiss', []);
+    exec(successCallback, errorCallback, 'AndroidProgressNotification', 'dismiss', []);
   }
 
   return _notification;

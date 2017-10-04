@@ -14,7 +14,7 @@ import org.json.JSONException;
 
 
 public class AndroidProgressNotification extends CordovaPlugin {
-    private static final String TAG = "progress-notification";
+    private static final String TAG = "AndroidProgressNotification";
     private static final Integer NOTIFICATION_DEFAULT_ID = 6;
     private static final Integer MAX_VALUE = 100;
 
