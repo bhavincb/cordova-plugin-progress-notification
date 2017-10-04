@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-progress-notification",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Progress Notification for Android Cordova Plugin",
   "main": "index.js",
   "scripts": {
