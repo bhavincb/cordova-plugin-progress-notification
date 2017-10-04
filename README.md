@@ -3,9 +3,7 @@ Progress Notification for Android Cordova Plugin
 
 
 ## What is this?
-![](https://developer.android.com/images/ui/notifications/progress_bar_summary.png)
-
-https://developer.android.com/training/notify-user/display-progress.html
+A Cordova plugin which can be used to display progressive notification in android. like notification of file downloading or uploading.
 
 ## Installation
 ```bash
@@ -16,11 +14,11 @@ cordova plugin add https://github.com/bhavincb/cordova-plugin-progress-notificat
 It's very simple, there are 4 self-explanatory methods:
 
 ```javascript
-progressNotification.show(tittle, message, indeterminate); // indeterminate is optional
+progressNotification.show(id, tittle, message, indeterminate); // indeterminate is optional
 
-progressNotification.update(value); // value can be 0-100
+progressNotification.update(id, value); // value can be 0-100
 
-progressNotification.finish(message, value); // Default parameter value for this method is 100
+progressNotification.finish(id, message, value); // Default parameter value for this method is 100
 
-progressNotification.dismiss(); // Close notification
+progressNotification.dismiss(id); // Close notification
 ```
