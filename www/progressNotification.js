@@ -1,4 +1,3 @@
-cordova.define("cordova-plugin-progress-notification.progressNotification", function(require, exports, module) {
 var exec = require('cordova/exec'),
     argscheck = require('cordova/argscheck'),
     utils = require('cordova/utils');
@@ -24,4 +23,3 @@ module.exports = (function() {
 
   return _notification;
 }());
-});
