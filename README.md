@@ -10,8 +10,17 @@ A Cordova plugin which can be used to display progressive notification in androi
 cordova plugin add https://github.com/bhavincb/cordova-plugin-progress-notification
 ```
 
+Or
+
+```bash
+npm install cordova-plugin-progress-notification
+cordova plugin add node_modules\cordova-plugin-progress-notification
+```
+
 ## How can I use?
 It's very simple, there are 4 self-explanatory methods:
+
+all this methods can be used on global variable "progressNotification" which will be available after cordova device ready event is fired.
 
 ```javascript
 progressNotification.show(id, tittle, message, indeterminate); // indeterminate is optional
