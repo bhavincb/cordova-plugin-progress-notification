@@ -17,6 +17,14 @@ npm install cordova-plugin-progress-notification
 cordova plugin add node_modules\cordova-plugin-progress-notification
 ```
 
+or for Ionic
+
+```bash
+npm install cordova-plugin-progress-notification
+cordova plugin add cordova-plugin-progress-notification --save --no-registry
+```
+
+
 ## How can I use?
 It's very simple, there are 4 self-explanatory methods:
 
